@@ -1,0 +1,32 @@
+{
+  "name": "build-gnuplot",
+  "main": "./lib/build-gnuplot",
+  "version": "0.1.0",
+  "description": "Run Gnuplot on current file and display output",
+  "keywords": [
+    "buildprovider",
+    "gnuplot"
+  ],
+  "providedServices": {
+    "builder": {
+      "description": "Runs Gnuplot Files",
+      "versions": {
+        "2.0.0": "provideBuilder"
+      }
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "package-deps": [
+    "build"
+  ],
+  "dependencies": {
+    "atom-package-deps": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.6.1"
+  }
+}
